@@ -1,0 +1,65 @@
+.projectSection {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .heading {
+    font-size: 5rem;
+    font-weight: bold;
+    margin-left: 12px;
+    margin-top: 50px;
+  }
+  
+  
+  
+  .projectContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .projectCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 350px;
+    border: 2px solid inherit;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    margin: 40px 20px;
+    transition: transform 0.7s ease-in-out;
+  }
+  
+  .projectImage {
+    border: 2px solid inherit;
+    border-radius: 12px;
+    transition: transform 0.7s ease-in-out;
+  }
+  
+  .projectImage:hover {
+    transform: scale(1.1);
+  }
+  
+  .projectTitle {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .projectLink {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-top: 10px;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  @media (max-width: 640px) {
+    .heading {
+      font-size: 3rem;
+    }
+  }
+  

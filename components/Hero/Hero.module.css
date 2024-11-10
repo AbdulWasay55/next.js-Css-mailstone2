@@ -1,0 +1,36 @@
+.title {
+    font-size: 3rem; 
+    font-weight: 500;
+  }
+
+
+.logoSection {
+  display: flex;
+  margin-top: 20px;
+}
+
+.logo {
+  align-self: center;
+}
+
+.name {
+  font-size: 1.25rem; 
+  margin: 6px; 
+  font-weight: bold;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+  }
+
+  
+  @media (max-width: 640px) {
+    
+      .title {
+        font-size: 2rem; 
+        font-weight: bold;
+      }
+  }

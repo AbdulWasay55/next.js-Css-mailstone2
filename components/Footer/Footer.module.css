@@ -1,0 +1,62 @@
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    border-top: 2px solid rgba(15, 23, 42, 0.1); /* Border color for Slate 900 with opacity */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a shadow for depth */
+    margin-top: 16px;
+    position: relative;
+  }
+  
+  .iconContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 16px;
+  }
+  
+  .iconLink {
+    color: inherit;
+    transition: color 0.3s ease;
+  }
+  
+  .iconInstagram {
+    color: #e1306c;
+  }
+  
+  .iconInstagram:hover {
+    color: #c13584;
+  }
+  
+  .iconLinkedin {
+    color: #0077b5;
+  }
+  
+  .iconLinkedin:hover {
+    color: #005582;
+  }
+  
+  .iconFacebook {
+    color: #1877f2;
+  }
+  
+  .iconFacebook:hover {
+    color: #145dbf;
+  }
+  
+  .iconGithub {
+    color: #000000;
+  }
+  
+  .iconGithub:hover {
+    color: #4d4d4d;
+  }
+  
+  .copyright {
+    text-align: center;
+    margin-top: 16px;
+    font-size: 14px;
+  }
+  

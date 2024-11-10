@@ -2,26 +2,66 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.header {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid rgba(15, 23, 42, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 0 16px 0 16px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.list {
+  display: flex;
+  gap: 20px;
+  font-weight: 500;
+  color: #64748b;
+}
+
+.list-item {
+  cursor: pointer;
+}
+
+.list-item:hover {
+  color: black;
+}
+
+button {
+  display: none;
+  margin-left: auto; /* Aligns the button to the right */
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  color: black;
+}
+
+.menu-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .list {
+    display: none;
   }
-}
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
+  button {
+    display: block;
+  }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .menu-mobile.menu-open {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 64px; /* Adjusted for header height */
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Equivalent to shadow-lg */
+    font-weight: 500;
   }
 }

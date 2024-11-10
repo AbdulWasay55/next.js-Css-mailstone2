@@ -1,0 +1,19 @@
+.heading{
+    font-size: 5rem;
+    font-weight: 700;
+    margin-top: 250px;
+    margin-left: 12px;
+}
+.contantBox{
+    margin: 0 12px 0 12px;
+    text-align: justify;
+}
+.contant{
+    margin-top: 8px;
+}
+@media (max-width: 640px) {
+
+    .heading {
+        font-size: 3rem;
+    }
+}
